@@ -57,7 +57,7 @@
     <section class="section-background">
       <div class="container">
         <h1 class="title-big">Ефективні рішення для вашого бізнесу</h1>
-        <button class="modal-btn" type="button">Замовити послугу</button>
+        <button class="modal-btn" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
 
@@ -126,13 +126,22 @@
           <li class="work-item">
             <img src="./images/section3/box1.jpg" alt="Людина, дивлячись на монітор i планшет друкує на клавіатурі"
               width="370" height="294" />
+            <div class="work-wrapper">
+              <p class="work-services">Десктопні додатки</p>
+            </div>
           </li>
           <li class="work-item">
             <img src="./images/section3/box2.jpg" alt="Людина з телефоном у лівій руці працює за ноутбуком" width="370"
               height="294" />
+            <div class="work-wrapper">
+              <p class="work-services">Мобільні додатки</p>
+            </div>
           </li>
           <li class="work-item">
             <img src="./images/section3/box3.jpg" alt="Людина пише стілусом у планшеті" width="370" height="294" />
+            <div class="work-wrapper">
+              <p class="work-services">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -410,6 +419,19 @@
     </div>
 
   </footer>
+
+  <!-- backdrop -->
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-close-btn" type="button" data-modal-close>
+        <svg class="modal-close-icon">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
